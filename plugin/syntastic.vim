@@ -551,7 +551,7 @@ function! SyntasticMake(options)
         let &l:errorformat = a:options['errorformat']
     endif
 
-    silent lmake!
+    silent make!
     let errors = getloclist(0)
 
     call setloclist(0, old_loclist)
